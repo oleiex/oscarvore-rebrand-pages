@@ -1,0 +1,1400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Oscarvore Master Rebrand v2 — strategy, positioning, channels, pillars, identity, funnel, YouTube system, bios, thumbnails, titles, cadence and approval. Built by VIS Integrated.">
+  <meta name="color-scheme" content="dark">
+  <title>Oscarvore · Master Rebrand v2</title>
+  <style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --bg-card-raised: #161616;
+  --border: rgba(244, 180, 0, 0.18);
+  --border-soft: rgba(255,255,255,0.06);
+  --grid: rgba(255,255,255,0.022);
+  --yellow: #f4b400;
+  --green: #6ee7a8;
+  --red: #ff7777;
+  --text: #ffffff;
+  --text-dim: #a8a8a8;
+  --text-mono: #8a8a8a;
+}
+html, body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 9.5pt; line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.page {
+  width: 210mm; height: 297mm;
+  padding: 12mm 12mm 14mm;
+  background:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px) 0 0 / 12.5mm 100%,
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px) 0 0 / 100% 12.5mm,
+    var(--bg);
+  position: relative; page-break-after: always; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.page:last-child { page-break-after: auto; }
+.page-body { flex: 1; min-height: 0; overflow: hidden; }
+
+/* ─── HEADER ─── */
+.page-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding-bottom: 4mm; border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 4mm; flex-shrink: 0;
+}
+.brand { display: flex; align-items: flex-start; gap: 10pt; }
+.logo {
+  width: 24pt; height: 24pt; border: 1.5px solid var(--yellow);
+  border-radius: 4px; display: flex; align-items: center; justify-content: center;
+  color: var(--yellow); font-family: "SF Mono", Menlo, monospace;
+  font-weight: 800; font-size: 12pt;
+}
+.brand-name { font-weight: 800; font-size: 10.5pt; letter-spacing: 0.02em; }
+.brand-sub { font-family: "SF Mono", Menlo, monospace; font-size: 7pt; color: var(--text-mono); letter-spacing: 0.12em; margin-top: 2pt; }
+.section-tag { text-align: right; line-height: 1.4; }
+.section-tag .label { font-family: "SF Mono", Menlo, monospace; font-size: 8pt; letter-spacing: 0.14em; color: var(--yellow); }
+.section-tag .num { font-family: "SF Mono", Menlo, monospace; font-size: 7pt; letter-spacing: 0.14em; color: var(--text-mono); margin-top: 3pt; }
+.dot { color: var(--yellow); margin-right: 4pt; }
+
+/* ─── COVER ─── */
+.cover { padding: 14mm 14mm; }
+.cover-eyebrow {
+  font-family: "SF Mono", Menlo, monospace; font-size: 9pt; letter-spacing: 0.22em;
+  color: var(--yellow); text-transform: uppercase; margin-top: 14mm; margin-bottom: 12pt;
+}
+.cover h1 {
+  font-size: 56pt; font-weight: 800; line-height: 1;
+  letter-spacing: -0.03em; margin-bottom: 12pt;
+}
+.cover h1 .accent { color: var(--yellow); }
+.cover-sub {
+  font-size: 13pt; color: var(--text-dim);
+  line-height: 1.45; max-width: 165mm; margin-bottom: 24pt;
+}
+.cover-sub b { color: var(--text); font-weight: 600; }
+.stat-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 12pt; margin-top: 18pt; padding-top: 16pt;
+  border-top: 1px solid var(--border-soft);
+}
+.stat .k { font-family: "SF Mono", Menlo, monospace; font-size: 7.5pt; letter-spacing: 0.14em; color: var(--text-mono); text-transform: uppercase; }
+.stat .v { font-size: 22pt; color: var(--yellow); font-weight: 800; margin-top: 4pt; letter-spacing: -0.01em; line-height: 1; }
+.stat .vsub { font-size: 8.5pt; color: var(--text-dim); margin-top: 2pt; }
+.cover-meta {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 8pt 22pt; margin-top: 22pt; padding-top: 16pt;
+  border-top: 1px solid var(--border-soft);
+}
+.cover-meta .key { font-family: "SF Mono", Menlo, monospace; font-size: 8pt; letter-spacing: 0.14em; color: var(--text-mono); text-transform: uppercase; }
+.cover-meta .val { font-size: 11pt; color: var(--text); font-weight: 600; margin-top: 2pt; }
+.cover-meta .val .accent { color: var(--yellow); }
+.cover-author-row {
+  margin-top: auto; padding-top: 18pt;
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+.cover-author .label { font-family: "SF Mono", Menlo, monospace; font-size: 8pt; letter-spacing: 0.18em; color: var(--text-mono); }
+.cover-author .name { font-size: 12pt; font-weight: 700; margin-top: 3pt; }
+.cover-author .name .accent { color: var(--yellow); }
+
+/* ─── BODY TITLES ─── */
+.body-title-row {
+  display: flex; align-items: flex-start; gap: 12pt;
+  margin-bottom: 6pt; flex-shrink: 0;
+}
+.body-title-row .secnum {
+  font-family: "SF Mono", Menlo, monospace; color: var(--text-mono);
+  font-size: 13pt; letter-spacing: 0.08em; padding-top: 4pt;
+}
+.body-title-row h1 {
+  font-size: 26pt; font-weight: 800; line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+.body-title-row h1 .accent { color: var(--yellow); }
+
+.major-title {
+  font-family: "SF Mono", Menlo, monospace; font-size: 8.5pt; letter-spacing: 0.22em;
+  color: var(--yellow); text-transform: uppercase;
+  margin: 12pt 0 5pt; font-weight: 700;
+  display: flex; align-items: center; gap: 7pt;
+}
+.major-title:first-child { margin-top: 0; }
+.major-title svg { width: 11pt; height: 11pt; color: var(--yellow); }
+.subtitle { font-size: 10pt; color: var(--text-dim); line-height: 1.55; margin-bottom: 6pt; }
+.subtitle em { color: var(--yellow); font-style: normal; font-weight: 600; }
+.subtitle b { color: var(--text); font-weight: 600; }
+
+/* ─── CARDS ─── */
+.card {
+  background: var(--bg-card); border: 1px solid var(--border-soft);
+  border-radius: 6pt; padding: 9pt 13pt; margin-bottom: 6pt;
+  page-break-inside: avoid;
+}
+.card .kicker {
+  font-family: "SF Mono", Menlo, monospace; font-size: 7.5pt; letter-spacing: 0.16em;
+  color: var(--yellow); font-weight: 700; margin-bottom: 5pt; text-transform: uppercase;
+}
+.card.featured { background: var(--bg-card-raised); border-left: 3px solid var(--yellow); }
+.card.good { border-left: 3px solid var(--green); }
+.card.danger { border-left: 3px solid var(--red); }
+.card .body { font-size: 10pt; color: var(--text); line-height: 1.55; }
+.card .body em { color: var(--yellow); font-style: normal; font-weight: 600; }
+
+/* ─── PROPOSED BADGE ─── */
+.proposed {
+  display: inline-flex; align-items: center; gap: 4pt;
+  background: rgba(244,180,0,0.12); border: 1px solid var(--border);
+  color: var(--yellow); font-family: "SF Mono", Menlo, monospace;
+  font-size: 7pt; letter-spacing: 0.14em; text-transform: uppercase;
+  font-weight: 700; padding: 1pt 6pt; border-radius: 2pt;
+  vertical-align: middle;
+}
+.proposed svg { width: 8pt; height: 8pt; }
+.proposed-banner {
+  background: rgba(244,180,0,0.07); border: 1px solid var(--border);
+  border-left: 3px solid var(--yellow); border-radius: 4pt;
+  padding: 6pt 11pt; margin: 4pt 0 6pt;
+  display: flex; align-items: center; gap: 8pt;
+}
+.proposed-banner svg { width: 14pt; height: 14pt; color: var(--yellow); flex-shrink: 0; }
+.proposed-banner .text {
+  font-size: 9pt; color: var(--text-dim); line-height: 1.4;
+}
+.proposed-banner .text b { color: var(--yellow); font-weight: 700; }
+
+/* ─── COLUMNS ─── */
+.row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6pt; margin-bottom: 6pt; }
+.row-2-uneven { display: grid; grid-template-columns: 1fr 1.5fr; gap: 6pt; margin-bottom: 6pt; }
+.row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6pt; margin-bottom: 6pt; }
+
+/* ─── OLD vs NEW COMPARE ─── */
+.compare {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; margin: 6pt 0 10pt;
+  border: 1px solid var(--border-soft);
+  border-radius: 6pt; overflow: hidden;
+}
+.compare .col { padding: 11pt 14pt; }
+.compare .col.old { background: rgba(255, 119, 119, 0.05); border-right: 1px solid var(--border-soft); }
+.compare .col.new { background: rgba(110, 231, 168, 0.05); }
+.compare .col-label {
+  font-family: "SF Mono", Menlo, monospace; font-size: 8pt;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  font-weight: 700; margin-bottom: 8pt;
+  display: flex; align-items: center; gap: 6pt;
+}
+.compare .col-label svg { width: 13pt; height: 13pt; }
+.compare .col.old .col-label { color: var(--red); }
+.compare .col.new .col-label { color: var(--green); }
+.compare ul { list-style: none; margin: 0; padding: 0; }
+.compare li {
+  font-size: 9pt; padding: 3pt 0 3pt 18pt;
+  position: relative; color: var(--text); line-height: 1.45;
+}
+.compare li svg {
+  position: absolute; left: 0; top: 4pt;
+  width: 11pt; height: 11pt;
+}
+.compare .col.old li svg { color: var(--red); }
+.compare .col.new li svg { color: var(--green); }
+
+/* ─── PILLAR GRID ─── */
+.pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6pt; margin: 6pt 0; }
+.pillar {
+  background: var(--bg-card); border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--yellow); border-radius: 6pt;
+  padding: 9pt 12pt; page-break-inside: avoid;
+}
+.pillar-head { display: flex; align-items: center; gap: 8pt; margin-bottom: 4pt; }
+.pillar-head svg { width: 18pt; height: 18pt; color: var(--yellow); flex-shrink: 0; }
+.pillar .pn { font-family: "SF Mono", Menlo, monospace; font-size: 7.5pt; letter-spacing: 0.14em; color: var(--yellow); font-weight: 700; }
+.pillar .pt { font-size: 11pt; font-weight: 700; line-height: 1.2; }
+.pillar .pd { font-size: 8.5pt; color: var(--text-dim); line-height: 1.45; margin-top: 2pt; }
+
+/* ─── HOOK LIST ─── */
+.hook-row {
+  display: grid; grid-template-columns: auto 1fr;
+  gap: 10pt; padding: 4pt 0;
+  border-bottom: 1px dashed var(--border-soft);
+}
+.hook-row:last-child { border-bottom: none; }
+.hook-tag {
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 6.5pt; letter-spacing: 0.14em;
+  color: var(--yellow); font-weight: 700;
+  padding: 1pt 5pt; border: 1px solid var(--border);
+  border-radius: 2pt; background: rgba(244, 180, 0, 0.08);
+  height: fit-content; white-space: nowrap; min-width: 70pt; text-align: center;
+}
+.hook-line { font-size: 9pt; color: var(--text); line-height: 1.35; font-style: italic; }
+
+/* ─── TABLES ─── */
+table { width: 100%; border-collapse: collapse; margin: 4pt 0 6pt; font-size: 9pt; }
+table th, table td { text-align: left; padding: 6pt 9pt; border-bottom: 1px solid var(--border-soft); vertical-align: top; }
+table th { font-family: "SF Mono", Menlo, monospace; font-size: 8pt; letter-spacing: 0.14em; color: var(--yellow); font-weight: 700; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+table td.mono { font-family: "SF Mono", Menlo, monospace; font-size: 8.5pt; color: var(--text-mono); letter-spacing: 0.06em; white-space: nowrap; }
+
+/* ─── DASH LIST ─── */
+ul.dash-list { list-style: none; margin: 4pt 0 6pt; padding: 0; }
+ul.dash-list li {
+  padding: 3pt 0 3pt 16pt; position: relative;
+  font-size: 9.5pt; line-height: 1.5; color: var(--text);
+}
+ul.dash-list li:before {
+  content: "→"; position: absolute; left: 0;
+  color: var(--yellow); font-family: "SF Mono", Menlo, monospace; font-weight: 700;
+}
+ul.dash-list li strong { color: var(--text); }
+ul.dash-list li em { color: var(--yellow); font-style: normal; font-weight: 600; }
+
+/* ─── CODE BLOCK (for paste-verbatim copy) ─── */
+.code-block {
+  background: var(--bg-card-raised); border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--yellow); border-radius: 4pt;
+  padding: 7pt 12pt; margin: 3pt 0 5pt;
+}
+.code-block .label {
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 7pt; letter-spacing: 0.16em;
+  color: var(--yellow); font-weight: 700;
+  text-transform: uppercase; display: block; margin-bottom: 4pt;
+}
+.code-block .text {
+  color: var(--text); font-family: -apple-system, "Inter", Arial, sans-serif;
+  font-size: 8.5pt; line-height: 1.5;
+}
+.code-block .text em { color: var(--yellow); font-style: normal; font-weight: 600; }
+.code-block .text strong { color: var(--text); font-weight: 700; }
+
+/* ─── CALLOUT ─── */
+.callout {
+  background: rgba(244, 180, 0, 0.06); border: 1px solid var(--border);
+  border-radius: 5pt; padding: 7pt 12pt; margin: 6pt 0;
+  font-size: 9.5pt; font-style: italic; line-height: 1.5;
+}
+.callout strong { color: var(--yellow); font-style: normal; font-weight: 700; }
+
+/* ─── FUNNEL ─── */
+.funnel { display: flex; flex-direction: column; gap: 3pt; margin: 4pt 0; }
+.funnel-stage {
+  background: var(--bg-card); border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--yellow); border-radius: 5pt;
+  padding: 8pt 11pt;
+  display: grid; grid-template-columns: 28pt 24pt 1fr auto;
+  gap: 10pt; align-items: center;
+}
+.funnel-stage .step-num { font-family: "SF Mono", Menlo, monospace; font-size: 13pt; color: var(--yellow); font-weight: 800; }
+.funnel-stage .step-icon svg { width: 18pt; height: 18pt; color: var(--yellow); }
+.funnel-stage .step-label .name { font-size: 11pt; font-weight: 700; }
+.funnel-stage .step-label .desc { font-size: 8.5pt; color: var(--text-dim); margin-top: 1pt; }
+.funnel-stage .step-meta {
+  font-family: "SF Mono", Menlo, monospace; font-size: 7.5pt;
+  letter-spacing: 0.12em; color: var(--text-mono); text-align: right;
+}
+.funnel-arrow { text-align: center; color: var(--yellow); font-size: 11pt; line-height: 1; }
+
+/* ─── COLOR SWATCH ─── */
+.swatch-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6pt; margin: 6pt 0; }
+.swatch {
+  border-radius: 5pt; padding: 9pt 12pt;
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 8pt; letter-spacing: 0.1em;
+}
+.swatch .name { color: rgba(255,255,255,0.85); font-weight: 700; margin-bottom: 12pt; }
+.swatch .hex { color: rgba(255,255,255,0.55); }
+.sw-bg { background: #0a0a0a; border: 1px solid var(--border-soft); color: white; }
+.sw-card { background: #111111; border: 1px solid var(--border-soft); color: white; }
+.sw-yellow { background: #f4b400; color: #0a0a0a; }
+.sw-yellow .hex { color: rgba(10,10,10,0.55); }
+.sw-text { background: #ffffff; color: #0a0a0a; }
+.sw-text .hex { color: rgba(10,10,10,0.55); }
+
+/* ─── TIMELINE ─── */
+.timeline-row {
+  display: grid; grid-template-columns: 68pt 1fr;
+  gap: 10pt; padding: 4pt 0;
+  border-bottom: 1px dashed var(--border-soft);
+}
+.timeline-row:last-child { border-bottom: none; }
+.timeline-when { font-family: "SF Mono", Menlo, monospace; font-size: 8.5pt; font-weight: 700; color: var(--yellow); letter-spacing: 0.1em; }
+.timeline-what { font-size: 9pt; line-height: 1.45; color: var(--text); }
+
+/* ─── PLATFORM ROW (with icons) ─── */
+.platform-row {
+  display: grid; grid-template-columns: 90pt 1fr;
+  gap: 10pt; padding: 4pt 0;
+  border-bottom: 1px dashed var(--border-soft);
+}
+.platform-row:last-child { border-bottom: none; }
+.platform-tag {
+  font-family: "SF Mono", Menlo, monospace; font-size: 8pt;
+  font-weight: 700; color: var(--yellow); letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex; align-items: flex-start; gap: 7pt;
+}
+.platform-tag svg { width: 13pt; height: 13pt; color: var(--yellow); flex-shrink: 0; margin-top: 1pt; }
+.platform-tag .stack { display: flex; flex-direction: column; }
+.platform-tag .sub { color: var(--text-mono); font-size: 7pt; margin-top: 2pt; }
+
+/* ─── 3-CHANNEL VISUAL ─── */
+.channel-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6pt; margin: 4pt 0 8pt; }
+.channel-card {
+  background: var(--bg-card); border: 1px solid var(--border-soft);
+  border-top: 3px solid var(--yellow); border-radius: 6pt;
+  padding: 10pt 11pt; page-break-inside: avoid;
+}
+.channel-card.green { border-top-color: var(--green); }
+.channel-card .ch-icon {
+  width: 22pt; height: 22pt; color: var(--yellow);
+  background: rgba(244,180,0,0.1); border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 4pt; margin-bottom: 6pt;
+}
+.channel-card.green .ch-icon { color: var(--green); background: rgba(110,231,168,0.1); }
+.channel-card .ch-icon svg { width: 100%; height: 100%; }
+.channel-card .ch-tag {
+  font-family: "SF Mono", Menlo, monospace; font-size: 7pt;
+  letter-spacing: 0.14em; color: var(--yellow); font-weight: 700;
+  text-transform: uppercase;
+}
+.channel-card.green .ch-tag { color: var(--green); }
+.channel-card .ch-name { font-size: 11pt; font-weight: 700; margin: 2pt 0 4pt; line-height: 1.2; }
+.channel-card .ch-role { font-size: 8.5pt; color: var(--text-dim); line-height: 1.45; }
+
+/* ─── ICON ROW (small icon + label) ─── */
+.icon-row { display: flex; align-items: center; gap: 8pt; margin-bottom: 4pt; }
+.icon-row svg { width: 14pt; height: 14pt; color: var(--yellow); flex-shrink: 0; }
+.icon-row .label { font-size: 9pt; color: var(--text); font-weight: 600; }
+
+/* ─── AUDIENCE FUNNEL DIAGRAM ─── */
+.audience-funnel {
+  display: flex; flex-direction: column; gap: 4pt;
+  margin: 6pt 0; align-items: center;
+}
+.af-row {
+  display: flex; align-items: center; justify-content: space-between;
+  border-radius: 6pt; padding: 9pt 14pt;
+  background: var(--bg-card); border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--yellow);
+  page-break-inside: avoid;
+}
+.af-row .left { display: flex; align-items: center; gap: 10pt; }
+.af-row .icon {
+  width: 22pt; height: 22pt; color: var(--yellow); flex-shrink: 0;
+}
+.af-row .icon svg { width: 100%; height: 100%; }
+.af-row .text .label {
+  font-family: "SF Mono", Menlo, monospace; font-size: 7.5pt;
+  letter-spacing: 0.14em; color: var(--yellow); font-weight: 700;
+  text-transform: uppercase;
+}
+.af-row .text .who {
+  font-size: 11pt; font-weight: 700; margin-top: 1pt;
+}
+.af-row .text .who em { color: var(--yellow); font-style: normal; font-weight: 700; }
+.af-row .scale {
+  font-family: "SF Mono", Menlo, monospace; font-size: 9pt;
+  font-weight: 800; color: var(--yellow); letter-spacing: 0.06em;
+  text-align: right; min-width: 90pt;
+}
+.af-row .scale .sub {
+  display: block; font-size: 7pt; color: var(--text-mono);
+  letter-spacing: 0.14em; font-weight: 600; margin-top: 1pt;
+  text-transform: uppercase;
+}
+/* Funnel narrows visually */
+.af-row.tier-1 { width: 100%; }
+.af-row.tier-2 { width: 80%; border-left-color: var(--green); }
+.af-row.tier-2 .icon, .af-row.tier-2 .scale { color: var(--green); }
+.af-row.tier-2 .text .label, .af-row.tier-2 .text .who em { color: var(--green); }
+.af-row.tier-3 { width: 60%; border-left-color: var(--green); background: rgba(110,231,168,0.04); }
+.af-row.tier-3 .icon, .af-row.tier-3 .scale { color: var(--green); }
+.af-row.tier-3 .text .label, .af-row.tier-3 .text .who em { color: var(--green); }
+.af-arrow { text-align: center; color: var(--yellow); font-size: 10pt; line-height: 1; }
+
+/* ─── CONTENT VOLUME BAR CHART ─── */
+.vol-chart {
+  display: flex; flex-direction: column; gap: 4pt;
+  margin: 6pt 0;
+}
+.vol-row {
+  display: grid; grid-template-columns: 130pt 1fr 30pt;
+  align-items: center; gap: 10pt;
+}
+.vol-label {
+  font-size: 9.5pt; font-weight: 600; color: var(--text);
+}
+.vol-bar-track {
+  background: var(--bg-card); height: 16pt;
+  border-radius: 3pt; overflow: hidden; position: relative;
+  border: 1px solid var(--border-soft);
+}
+.vol-bar-fill {
+  height: 100%; background: linear-gradient(90deg, var(--yellow) 0%, #fbbf24 100%);
+  border-radius: 2pt;
+}
+.vol-count {
+  font-family: "SF Mono", Menlo, monospace; font-size: 9pt;
+  font-weight: 800; color: var(--yellow); text-align: right;
+}
+
+/* ─── BIG CTA / SIGN-OFF ─── */
+.signoff {
+  background: var(--bg-card-raised);
+  border: 2px solid var(--yellow);
+  border-radius: 8pt;
+  padding: 22pt 24pt;
+  margin: 14pt 0;
+  text-align: center;
+}
+.signoff .small {
+  font-family: "SF Mono", Menlo, monospace; font-size: 8pt;
+  letter-spacing: 0.22em; color: var(--yellow);
+  text-transform: uppercase; font-weight: 700; margin-bottom: 8pt;
+}
+.signoff .big {
+  font-size: 26pt; font-weight: 800; line-height: 1.1;
+  letter-spacing: -0.02em; margin-bottom: 10pt;
+}
+.signoff .big .accent { color: var(--yellow); }
+.signoff .reply-box {
+  display: inline-block;
+  background: rgba(244,180,0,0.08); border: 1px solid var(--yellow);
+  border-radius: 5pt; padding: 8pt 16pt; margin-top: 6pt;
+  font-family: "SF Mono", Menlo, monospace; font-size: 10pt;
+  letter-spacing: 0.08em; color: var(--yellow); font-weight: 700;
+}
+
+/* ─── CHECKLIST (simple) ─── */
+.check-list { list-style: none; margin: 4pt 0; padding: 0; }
+.check-list li {
+  display: flex; align-items: flex-start; gap: 8pt;
+  padding: 4pt 0; font-size: 9.5pt; line-height: 1.5;
+}
+.check-list .box {
+  width: 12pt; height: 12pt; border: 1.5px solid var(--text-mono);
+  border-radius: 2pt; flex-shrink: 0; margin-top: 2pt;
+}
+.check-list strong { color: var(--text); font-weight: 700; }
+.check-list em { color: var(--text-mono); font-style: normal; font-size: 8.5pt; }
+
+/* ─── FOOTER ─── */
+.page-footer {
+  display: flex; justify-content: space-between;
+  font-family: "SF Mono", Menlo, monospace; font-size: 7.5pt;
+  letter-spacing: 0.18em; color: var(--text-mono);
+  text-transform: uppercase; padding-top: 3mm;
+  border-top: 1px solid var(--border-soft); flex-shrink: 0;
+}
+.page-footer .accent { color: var(--yellow); }
+
+/* ─── THUMBNAIL MOCKUPS ─── */
+.thumb-mock {
+  aspect-ratio: 16/9;
+  background: var(--bg-card-raised);
+  border: 1px solid var(--border-soft);
+  border-radius: 6pt;
+  position: relative;
+  overflow: hidden;
+}
+.thumb-mock .tm-text-tl {
+  position: absolute; top: 8pt; left: 10pt;
+  color: var(--yellow); font-weight: 800;
+  font-size: 11pt; line-height: 1.05;
+  letter-spacing: -0.01em; max-width: 55%;
+}
+.thumb-mock .tm-face {
+  position: absolute; right: 10pt; top: 50%;
+  transform: translateY(-50%);
+  width: 44pt; height: 44pt; border-radius: 50%;
+  background: #2a2a2a; border: 1px solid #3a3a3a;
+  display: flex; align-items: center; justify-content: center;
+  font-family: "SF Mono", Menlo, monospace; font-size: 5.5pt;
+  letter-spacing: 0.1em; color: var(--text-mono);
+  text-transform: uppercase;
+}
+.thumb-mock .tm-split {
+  position: absolute; top: 0; bottom: 0;
+  left: 50%; width: 2pt; background: var(--yellow);
+}
+.thumb-mock .tm-half {
+  position: absolute; top: 0; bottom: 0; width: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 11pt; letter-spacing: 0.05em;
+}
+.thumb-mock .tm-half.left { left: 0; background: rgba(255, 119, 119, 0.08); color: var(--red); }
+.thumb-mock .tm-half.right { right: 0; background: rgba(244, 180, 0, 0.08); color: var(--yellow); }
+.thumb-mock .tm-tier-cap {
+  position: absolute; top: 7pt; left: 50%;
+  transform: translateX(-50%);
+  color: var(--yellow); font-weight: 800;
+  font-size: 9pt; letter-spacing: 0.06em;
+}
+.thumb-mock .tm-grid {
+  position: absolute; bottom: 8pt; left: 50%;
+  transform: translateX(-50%);
+  display: grid; grid-template-columns: repeat(3, 14pt);
+  grid-template-rows: repeat(3, 14pt);
+  gap: 2pt;
+}
+.thumb-mock .tm-grid .sq {
+  background: #2a2a2a; border-radius: 1.5pt;
+}
+.thumb-mock .tm-grid .sq.hot { background: var(--yellow); }
+.thumb-caption {
+  font-size: 7.5pt; color: var(--text-dim);
+  line-height: 1.35; margin-top: 4pt;
+  text-align: center;
+}
+.thumb-caption strong {
+  color: var(--text); font-weight: 700;
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 7pt; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block; margin-bottom: 2pt;
+}
+
+
+@media screen {
+  html { scroll-behavior: smooth; }
+  body {
+    background: #050505;
+    padding: 0;
+    font-size: 9.5pt;
+  }
+  .doc { padding: 18pt 12pt 48pt; max-width: 100%; }
+  .page {
+    height: auto !important;
+    page-break-after: unset !important;
+    overflow: visible !important;
+    margin: 0 auto 28pt;
+    max-width: 210mm;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.55), 0 1px 0 rgba(255,255,255,0.03) inset;
+    border-radius: 6pt;
+    scroll-margin-top: 64pt;
+  }
+  .page-body { overflow: visible !important; }
+
+  /* Sticky top nav */
+  .topnav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,10,0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(244,180,0,0.18);
+    padding: 10pt 16pt;
+    display: flex; gap: 4pt; flex-wrap: wrap;
+    align-items: center;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 7.5pt; letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .topnav .brand-pill {
+    color: #f4b400;
+    font-weight: 700;
+    padding: 4pt 10pt 4pt 0;
+    margin-right: 6pt;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    letter-spacing: 0.16em;
+  }
+  .topnav a {
+    color: #a8a8a8; text-decoration: none;
+    padding: 4pt 9pt; border-radius: 3pt;
+    transition: color 0.15s ease, background 0.15s ease;
+    white-space: nowrap;
+  }
+  .topnav a:hover { color: #f4b400; background: rgba(244,180,0,0.07); }
+  .topnav a:focus-visible { outline: 1px solid rgba(244,180,0,0.6); outline-offset: 1px; }
+
+  @media (max-width: 720px) {
+    .topnav { font-size: 7pt; padding: 8pt 10pt; }
+    .topnav .brand-pill { width: 100%; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 6pt; margin-bottom: 4pt; }
+    .doc { padding: 12pt 6pt 32pt; }
+    .page { margin-bottom: 18pt; }
+  }
+}
+</style>
+</head>
+<body>
+    <nav class="topnav" aria-label="Document sections">
+      <span class="brand-pill">Oscarvore · v2</span>
+      <a href="#cover">01 Cover</a>
+      <a href="#why">02 Why</a>
+      <a href="#positioning">03 Positioning</a>
+      <a href="#channels">04 Channels</a>
+      <a href="#pillars">05 Pillars</a>
+      <a href="#identity">06 Identity</a>
+      <a href="#funnel">07 Funnel</a>
+      <a href="#youtube">08 YouTube</a>
+      <a href="#bios">09 Bios</a>
+      <a href="#thumbnails">10 Thumbnails</a>
+      <a href="#titles">11 Titles</a>
+      <a href="#cadence">12 Cadence</a>
+      <a href="#approve">13 Approve</a>
+    </nav>
+    <main class="doc">
+<section id="cover">
+<div class="page cover">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="cover-eyebrow">// The Full Rebrand · v2 · Toxin + Mechanism Lane</div>
+  <h1>Be Your<br>Own <span class="accent">Doctor.</span></h1>
+  <div class="cover-sub">
+    From <em>"the carnivore guy"</em> to <b style="color:var(--yellow)">the toxin + gut-mechanism guy.</b><br>
+    Strategy, channel build, bios, descriptions, CTAs, pinned comments, DMs. Everything you need to run the rebrand.
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><div class="k">Current subs</div><div class="v">3.4K</div><div class="vsub">@OscarvoreExtended</div></div>
+    <div class="stat"><div class="k">Content pillars</div><div class="v">5</div><div class="vsub">Mechanism-led</div></div>
+    <div class="stat"><div class="k">Ready templates</div><div class="v">40+</div><div class="vsub">Bios · CTAs · DMs</div></div>
+    <div class="stat"><div class="k">Hook lines</div><div class="v">20</div><div class="vsub">Tagged by pattern</div></div>
+  </div>
+  <div class="cover-meta">
+    <div><div class="key">Channel</div><div class="val">Oscarvore <span class="accent">Extended</span></div></div>
+    <div><div class="key">Low-Ticket Product</div><div class="val">Be Your Own <span class="accent">Doctor</span></div></div>
+    <div><div class="key">Reference Style</div><div class="val">Iman Gadzhi · mechanism-led</div></div>
+    <div><div class="key">Channel Stack</div><div class="val">Main YT <span class="accent">+</span> Corporate <span class="accent">+</span> Unlisted high-ticket</div></div>
+  </div>
+  <div class="cover-author-row">
+    <div class="cover-author"><div class="label">Built by</div><div class="name">VIS <span class="accent">Integrated</span></div></div>
+    <div class="cover-author" style="text-align:right"><div class="label">Document</div><div class="name">v2 · The Full Rebrand</div></div>
+  </div>
+</div>
+</section>
+<section id="why">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">01 //</div>
+    <h1>Why we're <span class="accent">doing this.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">The channel works. It's just stuck in the wrong lane. People know you as the <em>carnivore guy</em> when you're actually about something bigger and more current — <b>toxins, gut mechanism, and the body's barrier system.</b> That's the wave. We're getting you on it before everyone else catches up.</div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> The Perception Shift</div>
+    <div class="compare">
+      <div class="col old">
+        <div class="col-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> What people think now</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> The carnivore guy</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Milk + eggs guy</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Tribe / primal / raw meat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> The hair-loss guy</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Diet-extreme stereotype</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Niche and polarizing</li>
+        </ul>
+      </div>
+      <div class="col new">
+        <div class="col-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> What they'll think next</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> The toxin + mechanism guy</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> "Be Your Own Doctor" philosophy</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mechanism-led · zonulin · LPS · barrier</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Digestion · hormones · skin · stress</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Pragmatic · performance-focused</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Broad reach · premium audience converts on the back-end</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg> The Move</div>
+    <div class="callout"><strong>The opening:</strong> "toxins" and "gut mechanism" are dominating health conversation right now. Most creators in the lane push vibes. You explain the mechanism. First-mover positioning, taken before anyone else figures it out.</div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> What This Unlocks</div>
+    <ul class="dash-list">
+      <li><strong>Audience shift:</strong> stay <em>broad</em> for views (millions reachable) — the high-net-worth IG audience converts on the back-end, not the main-channel front-end.</li>
+      <li><strong>Reach + niche stay on one channel:</strong> niche videos still hit 100K-2M. No need to split your audience.</li>
+      <li><strong>Authority on rotation:</strong> 5 credibility signals (transformation, UFC, athletes, tribe research, farm) cycled so no single one becomes the identity.</li>
+      <li><strong>Clean funnel:</strong> short-form → main YT → unlisted high-ticket sales videos → Be Your Own Doctor.</li>
+      <li><strong>Testimonial flywheel:</strong> low-ticket scales transformation volume fast → more case studies → more high-ticket sales.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>02 / 13</div></div>
+</div>
+</section>
+<section id="positioning">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">02 //</div>
+    <h1>Positioning <span class="accent">+ who it's for.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> The One-Liner</div>
+    <div class="card featured">
+      <div class="kicker">What this channel actually is</div>
+      <div class="body">
+        Oscarvore Extended is where <em>anyone tired of the standard advice</em> learns how toxins and gut-barrier damage quietly destroy hormones, brain, and energy — and the four-step detox + reset protocol that fixes it. No supplements you can't pronounce. No vibes. <strong>Just the mechanism.</strong>
+      </div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg> Who You're Talking To  ·  Viewer ≠ Buyer</div>
+    <div class="subtitle">Main channel goes <em>broad</em> for reach (we agreed this on the call). The high-net-worth audience already follows you on IG — that's the buyer, not the main-channel viewer.</div>
+
+    <div class="audience-funnel">
+      <div class="af-row tier-1">
+        <div class="left">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="text"><div class="label">PRIMARY · THE VIEWER</div><div class="who">Broad health-curious audience · <em>millions reachable</em></div></div>
+        </div>
+        <div class="scale">~MILLIONS<span class="sub">main YT reach</span></div>
+      </div>
+      <div class="af-arrow">↓</div>
+      <div class="af-row tier-2">
+        <div class="left">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="text"><div class="label">SECONDARY · THE WARM-UP</div><div class="who">Your existing IG followers · <em>warm + loyal</em></div></div>
+        </div>
+        <div class="scale">~THOUSANDS<span class="sub">IG funnel</span></div>
+      </div>
+      <div class="af-arrow">↓</div>
+      <div class="af-row tier-3">
+        <div class="left">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z"/><line x1="5" y1="20" x2="19" y2="20"/></svg></div>
+          <div class="text"><div class="label">CONVERSION · THE BUYER</div><div class="who">High-net-worth · <em>buys high-ticket</em></div></div>
+        </div>
+        <div class="scale">~HUNDREDS<span class="sub">paying clients</span></div>
+      </div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> What You Want To Be Known For</div>
+    <div class="row-3">
+      <div class="card"><div class="kicker">01 · Mechanism</div><div class="body">Specific names: zonulin · LPS · tight junctions · MMC. Not vibes.</div></div>
+      <div class="card"><div class="kicker">02 · Research</div><div class="body">Tribe research · UFC consult · 8-fig client work · own blood-test journey.</div></div>
+      <div class="card"><div class="kicker">03 · Protocol</div><div class="body">The 4-step detox + reset (Clear · Seal · Test · Layer). Named. Ownable.</div></div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> What To Drop</div>
+    <ul class="dash-list">
+      <li><strong>The word "carnivore."</strong> No raw-meat content. No primal aesthetic.</li>
+      <li><strong>"Entrepreneur" in every title.</strong> Narrows reach. Goes in the funnel, not the hook.</li>
+      <li><strong>Testosterone-only framing.</strong> Use "hormones" broadly. Testosterone polarizes.</li>
+      <li><strong>Generic supplement talk.</strong> Position <em>against</em> the stack. The toxin angle is yours.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>03 / 13</div></div>
+</div>
+</section>
+<section id="channels">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">03 //</div>
+    <h1>Three channels. <span class="accent">Three jobs.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">One channel for reach. One for trust. One for closing. Each one does a single job well instead of one channel doing all three badly.</div>
+
+    <div class="channel-grid">
+      <div class="channel-card">
+        <div class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10 9 16 12 10 15" fill="currentColor" stroke="none"/></svg></div>
+        <div class="ch-tag">01 · Main</div>
+        <div class="ch-name">@OscarvoreExtended</div>
+        <div class="ch-role">Reach engine. Broad mechanism-led education. Mix of selfie + sit-down. Niche videos live here too. Shorts link back here.</div>
+      </div>
+      <div class="channel-card green">
+        <div class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <div class="ch-tag">02 · Corporate</div>
+        <div class="ch-name">Inside the Protocol</div>
+        <div class="ch-role">Trust engine. 20-30 min client interviews, before/afters, deep walkthroughs. Buyer-intent viewers only.</div>
+      </div>
+      <div class="channel-card green">
+        <div class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+        <div class="ch-tag">03 · Unlisted</div>
+        <div class="ch-name">High-Ticket Sales</div>
+        <div class="ch-role">Closing engine. Long-form sales video. Gated behind tracking link. CTA = application form. Not on the public channel.</div>
+      </div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg> What Goes Where</div>
+    <table>
+      <thead><tr><th style="width:34%">Content</th><th style="width:26%">Channel</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Mechanism-led protocol videos</td><td class="mono">Main</td><td>Reach + algorithm</td></tr>
+        <tr><td>Niche entrepreneur health</td><td class="mono">Main</td><td>Niche still hits 100K+ if hook lands</td></tr>
+        <tr><td>Short client transformations</td><td class="mono">Main</td><td>Social proof in the feed</td></tr>
+        <tr><td>20-30 min client interviews</td><td class="mono">Corporate</td><td>Trust-building · only buyer-intent viewers watch this far</td></tr>
+        <tr><td>High-ticket sales video</td><td class="mono">YT unlisted + tracking link</td><td>Direct response · gated · trackable</td></tr>
+        <tr><td>Be Your Own Doctor (low-ticket)</td><td class="mono">Notion landing page</td><td>Per call: low-ticket does NOT go through YT unlisted</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout"><strong>Heads up:</strong> Corporate channel is locked in per your answer. It launches Month 2 of the roadmap so you're not splitting attention on Day 1.</div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>04 / 13</div></div>
+</div>
+</section>
+<section id="pillars">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">04 //</div>
+    <h1>Five <span class="accent">pillars.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Every video on the main channel maps to one. <em>If an idea doesn't fit a pillar, it doesn't get made.</em></div>
+
+    <div class="pillar-grid">
+      <div class="pillar">
+        <div class="pillar-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="6"/><line x1="6" y1="12" x2="18" y2="12"/></svg><div><div class="pn">PILLAR 01</div><div class="pt">Toxins</div></div></div>
+        <div class="pd">Heavy metals · oxidized oils · synthetic vitamins · endocrine disruptors. The lane dominating 2026 health conversation. Drives the "your supplement stack is a toxin stack" identity.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M9 6h6M8 10c0 4 2 6 4 6s4-2 4-6c0-2-1-4-4-4s-4 2-4 4z"/><path d="M7 14c-2 1-3 3-3 5s2 3 4 3 3-1 3-3"/><path d="M17 14c2 1 3 3 3 5s-2 3-4 3-3-1-3-3"/></svg><div><div class="pn">PILLAR 02</div><div class="pt">Digestion Mechanism</div></div></div>
+        <div class="pd">Zonulin · LPS · tight junctions · MMC · motility. The mechanism stack that explains everything downstream. Highest share-rate pillar.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><div><div class="pn">PILLAR 03</div><div class="pt">Hormones</div></div></div>
+        <div class="pd">Framed as <em>hormones</em> broadly, not testosterone-only. Most "hormone problems" trace back to gut barrier function anyway — natural cross-link to Pillar 02.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg><div><div class="pn">PILLAR 04</div><div class="pt">Stress + Meditation</div></div></div>
+        <div class="pd">Cortisol is the hidden cause behind everything else. Instant-result content (4-min protocols) lives here.</div>
+      </div>
+      <div class="pillar" style="grid-column: span 2;">
+        <div class="pillar-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><div class="pn">PILLAR 05</div><div class="pt">Lifestyle + Performance</div></div></div>
+        <div class="pd">The lane that's <em>uniquely yours</em>. City tier-lists (Dubai, Bali — already winners on the channel), UFC consult deep-dives, private-client case studies, tribe research as authority anchors. <em>Broad appeal, still attracts the high-performer audience as warm leads.</em></div>
+      </div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Weekly Output Mix</div>
+    <div class="card">
+      <div class="body">2× <strong>Digestion Mechanism</strong> · 2× <strong>Toxins</strong> · 1× <strong>Hormones</strong> · 1× <strong>Stress</strong> · 2× <strong>Entrepreneur Lifestyle</strong> = <em>8 shorts/week</em>. Plus 1 main-channel long-form (15-25 min) per week. Plus 1 corporate-channel client interview every 2-3 weeks.</div>
+    </div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>05 / 13</div></div>
+</div>
+</section>
+<section id="identity">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">05 //</div>
+    <h1>How it <span class="accent">looks.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Per the call: <em>"the background gives credibility, aesthetics, and presents you well."</em> Visuals are the #1 short-form lever. Lock these first.</div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg> Colors</div>
+    <div class="swatch-row">
+      <div class="swatch sw-bg"><div class="name">VOID</div><div class="hex">#0a0a0a</div></div>
+      <div class="swatch sw-card"><div class="name">CARBON</div><div class="hex">#111111</div></div>
+      <div class="swatch sw-yellow"><div class="name">SIGNAL</div><div class="hex">#f4b400</div></div>
+      <div class="swatch sw-text"><div class="name">CHALK</div><div class="hex">#ffffff</div></div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg> Type</div>
+    <div class="row-2-uneven">
+      <div class="card">
+        <div class="kicker">Display</div>
+        <div class="body" style="font-weight: 800; font-size: 14pt; letter-spacing: -0.02em; line-height: 1.1;">Inter Display Black</div>
+        <div class="body" style="font-size: 9pt; color: var(--text-dim); margin-top: 4pt;">Thumbnails · titles · big claims. Tight letter-spacing. All-caps for stopping power.</div>
+      </div>
+      <div class="card">
+        <div class="kicker">Body + lower-thirds</div>
+        <div class="body" style="font-family: 'SF Mono', Menlo, monospace; font-size: 10pt; letter-spacing: 0.1em; text-transform: uppercase;">SF MONO · 10PT · 0.1EM TRACKING</div>
+        <div class="body" style="font-size: 9pt; color: var(--text-dim); margin-top: 4pt;">On-screen text · lower-thirds · stat callouts. Reads <em>clinical</em>, not guru.</div>
+      </div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> Three Thumbnail Layouts</div>
+    <table>
+      <thead><tr><th style="width:24%">Layout</th><th style="width:38%">Composition</th><th>Use for</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Face + 3 Words</strong></td><td>Tight on face, eye contact, expression of disbelief. 3 words max in Signal yellow, top-left.</td><td>Bold-claim content</td></tr>
+        <tr><td><strong>Split Before/After</strong></td><td>Left: client before (dim). Right: client after (lit). Yellow arrow center.</td><td>Case studies, transformations</td></tr>
+        <tr><td><strong>Tier-List Grid</strong></td><td>9-square grid, one tier highlighted yellow.</td><td>"Ranked every X" content</td></tr>
+      </tbody>
+    </table>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> Environment Rules</div>
+    <ul class="dash-list">
+      <li><strong>Studio sit-down:</strong> matte-black backdrop · 1 practical lamp · books, apothecary jars, supplement bottle props on shelf</li>
+      <li><strong>Selfie:</strong> bright window light · clean room · plain neutral wardrobe (black/grey/cream)</li>
+      <li><strong>B-roll:</strong> blood-test papers · supplement labels · whiteboard mechanism sketches · whole-food kitchen</li>
+      <li><strong>Never:</strong> raw meat · tribal imagery · primal aesthetic. <em>Pragmatic, clean, clinical.</em></li>
+    </ul>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>06 / 13</div></div>
+</div>
+</section>
+<section id="funnel">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">06 //</div>
+    <h1>How traffic <span class="accent">moves.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Cold short-form viewer to high-ticket client. Each stage has one job: <em>warm them enough to take the next step.</em></div>
+
+    <div class="funnel">
+      <div class="funnel-stage"><div class="step-num">01</div><div class="step-icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="step-label"><div class="name">Short-form discovery</div><div class="desc">IG Reels · YT Shorts · TikTok · 60-90s · selfie + sit-down mix</div></div><div class="step-meta">Cold<br>$0</div></div>
+      <div class="funnel-arrow">↓</div>
+      <div class="funnel-stage"><div class="step-num">02</div><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10 9 16 12 10 15" fill="currentColor" stroke="none"/></svg></div><div class="step-label"><div class="name">Main YouTube · @OscarvoreExtended</div><div class="desc">15-25 min long-form · mechanism-led · 1/week</div></div><div class="step-meta">Warm<br>$0</div></div>
+      <div class="funnel-arrow">↓</div>
+      <div class="funnel-stage"><div class="step-num">03</div><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><div class="step-label"><div class="name">Corporate channel · case studies</div><div class="desc">20-30 min client interviews + transformation deep-dives</div></div><div class="step-meta">Hot<br>$0</div></div>
+      <div class="funnel-arrow">↓</div>
+      <div class="funnel-stage" style="border-left-color: var(--green);"><div class="step-num">04</div><div class="step-icon" style="color:var(--green);background:rgba(110,231,168,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="step-label"><div class="name">Be Your Own Doctor · low-ticket <span class="proposed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Proposed</span></div><div class="desc">Notion-style landing page · community · drives the testimonial flywheel</div></div><div class="step-meta" style="color:var(--green)">CONVERT<br>$27/mo*</div></div>
+      <div class="funnel-arrow">↓</div>
+      <div class="funnel-stage" style="border-left-color: var(--green);"><div class="step-num">05</div><div class="step-icon" style="color:var(--green);background:rgba(110,231,168,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div><div class="step-label"><div class="name">Unlisted YouTube · high-ticket sales</div><div class="desc">Long-form sales video · tracking link · Google Analytics · application CTA</div></div><div class="step-meta" style="color:var(--green)">CONVERT<br>premium</div></div>
+      <div class="funnel-arrow">↓</div>
+      <div class="funnel-stage" style="border-left-color: var(--green); background: rgba(110, 231, 168, 0.04);"><div class="step-num">06</div><div class="step-icon" style="color:var(--green);background:rgba(110,231,168,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="step-label"><div class="name">1-on-1 client</div><div class="desc">Application → discovery call → enrollment → next case study → flywheel closes</div></div><div class="step-meta" style="color:var(--green)">CLOSED</div></div>
+    </div>
+
+    <div class="proposed-banner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><div class="text"><b>* Pricing flag:</b> $27/mo BYOD is the working number. Confirm before launch and I'll update everywhere it appears.</div></div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>07 / 13</div></div>
+</div>
+</section>
+<section id="youtube">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">07 //</div>
+    <h1>YouTube <span class="accent">build.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Everything that goes into YouTube Studio. Paste it or tweak it — the structure is doing the SEO + positioning work.</div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10 9 16 12 10 15" fill="currentColor" stroke="none"/></svg> Channel Identity</div>
+    <table>
+      <thead><tr><th style="width:24%">Field</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">Channel name</td><td>Oscar [Full Name]  <em style="color:var(--text-mono);font-size:8.5pt">(replace with your real name) · @OscarvoreExtended</em></td></tr>
+        <tr><td class="mono">Handle</td><td>@OscarvoreExtended</td></tr>
+        <tr><td class="mono">Tagline</td><td><strong>Natural health that actually works.</strong>  <em style="color:var(--text-mono);font-size:8.5pt">(replaces current "for ambitious entrepreneurs" tagline — broader for main channel reach)</em></td></tr>
+        <tr><td class="mono">Banner</td><td>Use <code style="background:var(--bg-card-raised);padding:1pt 5pt;border-radius:2pt;font-family:'SF Mono',Menlo,monospace;font-size:8.5pt;color:var(--yellow)">assets/01-channel-banner.png</code></td></tr>
+        <tr><td class="mono">Profile picture</td><td>Tight headshot · matte black bg · soft side-light · controlled expression (not smiling) · 800×800</td></tr>
+        <tr><td class="mono">Trailer video</td><td>The new toxin-stack long-form once published · use a 30-60s segment as trailer</td></tr>
+      </tbody>
+    </table>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Channel Description — Paste Verbatim</div>
+    <div class="code-block" style="padding:5pt 11pt">
+      <span class="label">YouTube Studio → Customization → Basic Info → Description</span>
+      <div class="text" style="font-size:11pt; line-height:1.5; padding:8pt 0">Natural health that actually works.</div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg> Channel Keywords (YT Studio → Advanced)</div>
+    <div class="code-block">
+      <span class="label">Tags</span>
+      <div class="text">natural health, alternative health, gut health, toxins in supplements, leaky gut, zonulin, LPS, digestion mechanism, hormones, testosterone naturally, cortisol, meditation, skin health, UFC nutrition, tribe research, be your own doctor, high performer, biohacking 2026</div>
+    </div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>08 / 13</div></div>
+</div>
+</section>
+<section id="bios">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">08 //</div>
+    <h1>Bios. <span class="accent">Every platform.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Paste per platform. Each one is character-counted to fit. <em>Same voice, platform-tuned format.</em></div>
+
+    <div class="platform-row">
+      <div class="platform-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><div class="stack">INSTAGRAM<span class="sub">@oscarvore · 150 char</span></div></div>
+      <div class="code-block" style="margin:0">
+        <div class="text">I improve people's health naturally.<br>
+DM me 'NATURAL' to get started<br>
+👇 [client case-study YouTube URL]</div>
+      </div>
+    </div>
+
+    <div class="platform-row">
+      <div class="platform-tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><div class="stack">X / TWITTER<span class="sub">@oscarvore · 160 char</span></div></div>
+      <div class="code-block" style="margin:0">
+        <div class="text">Natural health that actually works. The toxin + gut-mechanism guy. Building <strong>Be Your Own Doctor</strong> · UFC + private client work · own the mechanism 🧬</div>
+      </div>
+    </div>
+
+    <div class="platform-row">
+      <div class="platform-tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.69a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.12z"/></svg><div class="stack">TIKTOK<span class="sub">@oscarvore · 80 char</span></div></div>
+      <div class="code-block" style="margin:0">
+        <div class="text">Be your own doctor.<br>The toxin + gut mechanism.<br>↓ beyourowndoctor.com <span class="proposed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Proposed</span></div>
+      </div>
+    </div>
+
+    <div class="platform-row">
+      <div class="platform-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10 9 16 12 10 15" fill="currentColor" stroke="none"/></svg><div class="stack">YOUTUBE<span class="sub">@OscarvoreExtended · short bio</span></div></div>
+      <div class="code-block" style="margin:0">
+        <div class="text">Natural health that actually works.<br>↓ beyourowndoctor.com <span class="proposed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Proposed</span></div>
+      </div>
+    </div>
+
+    <div class="platform-row">
+      <div class="platform-tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg><div class="stack">LINKEDIN<span class="sub">headline · 220 char</span></div></div>
+      <div class="code-block" style="margin:0">
+        <div class="text">Natural Health Coach · Founder, Be Your Own Doctor · UFC + private client consultations · Toxin + gut-mechanism specialist · Original tribe research</div>
+      </div>
+    </div>
+
+    <div class="platform-row">
+      <div class="platform-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><div class="stack">WEBSITE HERO<span class="sub">oscarvore.com <span class="proposed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Proposed</span></span></div></div>
+      <div class="code-block" style="margin:0">
+        <div class="text"><strong>You don't need a doctor. You need a system that works.</strong><br><br>
+The toxin + gut-mechanism protocols that the medical system can't give you. Built by someone who fixed himself first — with the blood tests to prove it.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>09 / 13</div></div>
+</div>
+</section>
+<section id="thumbnails">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">09 //</div>
+    <h1>Thumbnail <span class="accent">compositions.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Three layouts. Pick the one that fits the video's job. <em>Reference benchmark: @oscar_patel (496K subs, natural beauty) uses similar structural patterns successfully</em> — same composition rules transfer to our lane.</div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> The Three Layouts</div>
+    <div class="row-3" style="gap:10pt; margin-top:8pt">
+      <div>
+        <div class="thumb-mock">
+          <div class="tm-text-tl">STOP<br>DOING<br>THIS.</div>
+          <div class="tm-face">face zone</div>
+        </div>
+        <div class="thumb-caption"><strong>01 · Face + 3 Words</strong>Bold-claim videos · contradiction hooks · the mechanism reveal</div>
+      </div>
+      <div>
+        <div class="thumb-mock">
+          <div class="tm-half left">BEFORE</div>
+          <div class="tm-half right">AFTER</div>
+          <div class="tm-split"></div>
+        </div>
+        <div class="thumb-caption"><strong>02 · Before/After Split</strong>Case studies · transformations · personal experiment videos</div>
+      </div>
+      <div>
+        <div class="thumb-mock">
+          <div class="tm-tier-cap">S TIER</div>
+          <div class="tm-grid">
+            <div class="sq hot"></div><div class="sq"></div><div class="sq"></div>
+            <div class="sq"></div><div class="sq"></div><div class="sq"></div>
+            <div class="sq"></div><div class="sq"></div><div class="sq"></div>
+          </div>
+        </div>
+        <div class="thumb-caption"><strong>03 · Tier-List Grid</strong>"Ranked every X" content · supplement reviews · city tier-lists</div>
+      </div>
+    </div>
+
+    <div class="callout"><strong>Composition rule of thumb:</strong> 3 words max in the text. One emotion in the face. Yellow + white only. <em>Show the problem, not the answer</em> — the video is the resolution.</div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>10 / 13</div></div>
+</div>
+</section>
+<section id="titles">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">10 //</div>
+    <h1>Long-form <span class="accent">titles.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Ten ready-to-shoot title examples mapped to the 5 pillars. Each follows a proven structural pattern — <em>mechanism-led, personal experiment, or contradiction.</em> Reference: @oscar_patel (496K subs) uses these same structural patterns in his lane.</div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg> Ten Titles · Two Per Pillar</div>
+    <table>
+      <thead><tr><th style="width:24%">Pillar</th><th>Example title</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Toxins</strong></td><td><em>The Heavy Metals in Your Multivitamin (What the Testing Shows)</em></td></tr>
+        <tr><td><strong>Toxins</strong></td><td><em>I Took Zero Supplements for 60 Days — Here's the Bloodwork</em></td></tr>
+        <tr><td><strong>Digestion Mechanism</strong></td><td><em>How Your Gut Barrier Actually Breaks (Full Guide)</em></td></tr>
+        <tr><td><strong>Digestion Mechanism</strong></td><td><em>Most Bloating Is Mechanical, Not Dietary — Here's the Fix</em></td></tr>
+        <tr><td><strong>Hormones</strong></td><td><em>Why Most Men Will Be on TRT by 40 (and How to Avoid It)</em></td></tr>
+        <tr><td><strong>Hormones</strong></td><td><em>The Hormone Panel Your Doctor Won't Order</em></td></tr>
+        <tr><td><strong>Stress</strong></td><td><em>The 4-Minute Protocol That Drops Cortisol Tonight</em></td></tr>
+        <tr><td><strong>Stress</strong></td><td><em>Why Your To-Do List Is Aging You Faster Than Your Diet</em></td></tr>
+        <tr><td><strong>Lifestyle + Performance</strong></td><td><em>I Ranked Every Major City for Health</em></td></tr>
+        <tr><td><strong>Lifestyle + Performance</strong></td><td><em>What I Feed an Active UFC Fighter Between Camps</em></td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout"><strong>Three structural patterns to rotate:</strong> (1) mechanism-led with "Full Guide" tail · (2) personal experiment with specific duration + outcome · (3) contradiction/reframe of common belief. <em>Avoid "entrepreneur" framing</em> — narrows reach. Save that audience for the conversion side of the funnel.</div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>11 / 13</div></div>
+</div>
+</section>
+<section id="cadence">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">11 //</div>
+    <h1>Cadence <span class="accent">+ targets.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Weekly Output Target</div>
+    <table>
+      <thead><tr><th>Asset</th><th>Volume / month</th><th>Who handles</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td>Long-form video</td><td class="mono">12 / mo  (≈3/wk)</td><td>VIS Integrated</td><td>Main channel</td></tr>
+        <tr><td>Short-form (Reels / Shorts / TT)</td><td class="mono">30–40 / mo</td><td>Oscar (self-shot)</td><td>IG · TT · YT Shorts</td></tr>
+        <tr><td>Case-study interview</td><td class="mono">2 / mo</td><td>VIS Integrated</td><td>Corporate channel</td></tr>
+        <tr><td>IG Stories</td><td class="mono">5–7 / day</td><td>Oscar</td><td>IG · 25 value · 5 with CTA / mo</td></tr>
+        <tr><td>Community post</td><td class="mono">1 / wk</td><td>Oscar</td><td>BYOD community</td></tr>
+      </tbody>
+    </table>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> Format Split — When To Pick Which</div>
+    <div class="row-2">
+      <div class="card good"><div class="kicker">SELFIE · use when</div><div class="body">Topic is trending · reaction-style · short opinionated take · traveling · no studio access</div></div>
+      <div class="card good"><div class="kicker">SIT-DOWN · use when</div><div class="body">Topic is scientific / mechanism-heavy · authority play (tribe · bloodwork) · long-form · controlled lighting</div></div>
+    </div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg> 90-Day Targets <span class="proposed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Proposed</span></div>
+    <div class="proposed-banner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><div class="text"><b>Send me your numbers</b> — the targets below are placeholders to start the conversation. Reply with what you'd actually want to hit and I'll lock them in.</div></div>
+    <table>
+      <thead><tr><th style="width:18%">Window</th><th style="width:50%">Metric</th><th>Placeholder</th></tr></thead>
+      <tbody>
+        <tr><td>30 days</td><td>Subs added · BYOD launch</td><td class="mono">+1.5K · 50 paying</td></tr>
+        <tr><td>60 days</td><td>Long-form avg view duration · High-ticket apps</td><td class="mono">≥ 45% · 15/mo</td></tr>
+        <tr><td>90 days</td><td>Channel subs · case studies live</td><td class="mono">10K · 10 interviews</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>12 / 13</div></div>
+</div>
+</section>
+<section id="approve">
+<div class="page">
+  
+<div class="page-header">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div>
+      <div class="brand-name">VIS INTEGRATED</div>
+      <div class="brand-sub">MASTER REBRAND · v2<br>× OSCARVORE</div>
+    </div>
+  </div>
+  <div class="section-tag">
+    <div class="label"><span class="dot">●</span> THE FULL REBRAND</div>
+    <div class="num">YOUTUBE · IG · X · TIKTOK</div>
+  </div>
+</div>
+
+  <div class="body-title-row">
+    <div class="secnum">12 //</div>
+    <h1>Approve <span class="accent">+ ship.</span></h1>
+  </div>
+  <div class="page-body">
+    <div class="subtitle">Read through. Tick what you like. Flag what you want changed. Send back.</div>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> What You're Approving</div>
+    <ul class="check-list">
+      <li><div class="box"></div><div><strong>The pivot</strong> — toxin + gut-mechanism guy <em>(was: the carnivore guy)</em></div></li>
+      <li><div class="box"></div><div><strong>5 content pillars</strong> — Toxins · Digestion Mechanism · Hormones · Stress · Lifestyle + Performance</div></li>
+      <li><div class="box"></div><div><strong>"Be Your Own Doctor"</strong> as the low-ticket product name</div></li>
+      <li><div class="box"></div><div><strong>Three-channel architecture</strong> — Main + Corporate + Unlisted high-ticket</div></li>
+      <li><div class="box"></div><div><strong>Channel description</strong> on page 08 — "Natural health that actually works."</div></li>
+      <li><div class="box"></div><div><strong>Instagram bio</strong> on page 09 — the new 'NATURAL' DM funnel</div></li>
+      <li><div class="box"></div><div><strong>Thumbnail compositions</strong> on page 10 — the 3 layouts</div></li>
+      <li><div class="box"></div><div><strong>Long-form titles</strong> on page 11 — 10 examples across the 5 pillars</div></li>
+      <li><div class="box"></div><div><strong>Cadence</strong> on page 12 — VIS handles 12 long-form/mo · Oscar handles short-form</div></li>
+    </ul>
+
+    <div class="major-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> What I Need From You</div>
+    <ul class="check-list">
+      <li><div class="box"></div><div><strong>Confirm your full name</strong> for the channel name on page 08</div></li>
+      <li><div class="box"></div><div><strong>Confirm BYOD pricing</strong> — is $27/mo the real number?</div></li>
+      <li><div class="box"></div><div><strong>Confirm URLs</strong> — are beyourowndoctor.com + oscarvore.com/work-with-me live?</div></li>
+      <li><div class="box"></div><div><strong>Your 90-day targets</strong> — placeholders on page 12 need your real numbers</div></li>
+      <li><div class="box"></div><div><strong>Client case-study YT URL</strong> — for the Instagram bio link on page 09</div></li>
+    </ul>
+
+    <div class="signoff">
+      <div class="small">When you're ready</div>
+      <div class="big">Reply with<br><span class="accent">"Rebrand approved."</span></div>
+      <div style="font-size:10pt; color:var(--text-dim); margin-top:6pt; line-height:1.5;">Channel updates go live within 48 hours.<br>Wednesday studio shoot follows.</div>
+      <div class="reply-box">→ "Rebrand approved · ship it"</div>
+    </div>
+
+    <div style="text-align:center; margin-top:14pt; font-family:'SF Mono',Menlo,monospace; font-size:8pt; letter-spacing:0.18em; color:var(--text-mono); text-transform:uppercase;">
+      VIS Integrated · oliver@visintegrated.com
+    </div>
+  </div>
+  <div class="page-footer"><div>VIS INTEGRATED <span class="accent">//</span> OSCARVORE · MASTER REBRAND</div><div>13 / 13</div></div>
+</div>
+</section>
+    </main>
+</body>
+</html>
